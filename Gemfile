@@ -36,6 +36,9 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootstrap-sass',       '3.2.0.0'
 gem 'jquery-rails'
 gem 'bcrypt', git: 'https://github.com/codahale/bcrypt-ruby.git', :require => 'bcrypt'
+
+gem 'will_paginate',           '3.1.5'
+gem 'bootstrap-will_paginate', '0.0.10'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
