@@ -9,6 +9,7 @@ class User < ApplicationRecord
                     uniqueness: { case_sensitive: false }
   has_secure_password
   validates :password, presence: true, length: { minimum: 6 }
+  has_many :microposts, dependent: :destroy
 
   def User.digest(string)
     cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST :
@@ -60,6 +61,9 @@ class User < ApplicationRecord
     UserMailer.password_reset(self).deliver_now
   end
 
+  def feed
+    microposts
+  end
 
   private 
   def downcase_email

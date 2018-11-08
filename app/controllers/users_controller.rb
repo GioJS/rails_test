@@ -20,6 +20,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
+    @microposts = @user.microposts.paginate(page: params[:page], per_page: 10)
   end
 
   def edit
@@ -62,14 +63,6 @@ class UsersController < ApplicationController
     unless current_user?(@user)
       flash[:danger] = "you are a different user"
       redirect_to(root_url) 
-    end
-  end
-
-  def logged_in_user
-    unless logged_in?
-      store_location
-      flash[:danger] = "Please log in."
-      redirect_to login_url
     end
   end
 end
