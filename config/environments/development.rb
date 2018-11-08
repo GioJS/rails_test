@@ -39,7 +39,7 @@ Rails.application.configure do
   }
   ActionMailer::Base.delivery_method = :smtp
 
-  config.action_mailer.default_url_options = { :host => 'test-rails-giojs.herokuapp.com' }
+  config.action_mailer.default_url_options = { :host => 'http://test-rails-giojs.herokuapp.com' }
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
