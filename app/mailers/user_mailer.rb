@@ -10,4 +10,10 @@ class UserMailer < ApplicationMailer
     @user = user
     mail to: user.email, subject: "Password reset"
   end
+
+  def notify_message(userTo, userFrom)
+    @userTo = userTo
+    @UserFrom = userFrom
+    mail to: user.email, subject: "New comments"
+  end
 end

@@ -11,6 +11,9 @@ class CommentsController < ApplicationController
         @comment.assign_attributes({:text => params['text'], :post_id => params['post_id'], :user_id => current_user.id})
         if @comment.save!
             flash[:success] = "Comment posted!"
+            post_author = comment.micropost.user
+            comment_author = comment.user
+            UserMailer.account_activation(post_author, comment_author).deliver_now
             redirect_to request.referrer || root_url
         else
             flash[:danger] = "Impossible to comment!"
