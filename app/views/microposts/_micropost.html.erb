@@ -10,5 +10,11 @@
       <%= link_to "delete", micropost, method: :delete,
                                        data: { confirm: "You sure?" } %>
     <% end %>
+    <%= render 'shared/comment_form', :@micropost_id => micropost.id %>
+    <% micropost.comments.each do |comment| %>
+      <ul>
+      <%=render comment %>
+      </ul>
+    <% end %>
   </span>
 </li>
