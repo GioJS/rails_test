@@ -11,10 +11,8 @@ class CommentsController < ApplicationController
         @comment.assign_attributes({:text => params['text'], :post_id => params['post_id'], :user_id => current_user.id})
         if @comment.save!
             flash[:success] = "Comment posted!"
-            comment = Comment.find(@comment.id)
-
-            post_author = comment.micropost.user
-            comment_author = comment.user
+            post_author = @comment.micropost.user
+            comment_author = @comment.user
             #if post_author.id != comment_author.id
             UserMailer.notify_message(post_author, comment_author).deliver_now
             #end
