@@ -13,7 +13,9 @@ class CommentsController < ApplicationController
             flash[:success] = "Comment posted!"
             post_author = @comment.micropost.user
             comment_author = @comment.user
+            #if post_author.id != comment_author.id
             UserMailer.notify_message(post_author, comment_author).deliver_now
+            #end
             redirect_to request.referrer || root_url
         else
             flash[:danger] = "Impossible to comment!"

@@ -14,6 +14,6 @@ class UserMailer < ApplicationMailer
   def notify_message(userTo, userFrom)
     @userTo = userTo
     @UserFrom = userFrom
-    mail to: user.email, subject: "New comments"
+    mail to: userTo.email, subject: "New comments"
   end
 end
