@@ -30,7 +30,16 @@ module SessionsHelper
 
     def current_user?(user)
         user == current_user
-      end
+    end
+
+    def is_comment_author_or_post_author?(comment_id)
+        comment = Comment.find(comment_id)
+        post_author = comment.micropost.user_id
+        comment_author = comment.user_id
+        
+        current_user.id == post_author || current_user.id == comment_author
+            
+    end
 
     def forget(user)
         user.forget

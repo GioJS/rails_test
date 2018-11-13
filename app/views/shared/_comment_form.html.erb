@@ -1,6 +1,6 @@
 <%= form_tag('/comments', method: :create) do -%>
   <div class="field" style="margin-top: 25px;">
-    <%= text_area_tag :text, "Compose new comment..." %>
+    <%= text_area_tag :text, '', placeholder: "Compose new comment..." %>
   </div>
   <%= hidden_field_tag :post_id, @micropost_id %>
   <%= submit_tag "Comment", class: "btn btn-xs btn-primary" %>

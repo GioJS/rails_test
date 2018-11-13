@@ -5,8 +5,8 @@
   </span>
   <span class="timestamp">
     Posted <%= time_ago_in_words(comment.created_at) %> ago.
-    <% if current_user?(comment.user) %>
-      <%= link_to "delete", comments_path, method: :delete,
+    <% if is_comment_author_or_post_author?(comment.id) %>
+      <%= link_to "delete", "/comments/#{comment.id}", method: :delete,
                                        data: { confirm: "You sure?" } %>
     <% end %>
   </span>
