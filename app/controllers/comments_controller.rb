@@ -13,6 +13,8 @@ class CommentsController < ApplicationController
             flash[:success] = "Comment posted!"
             post_author = @comment.micropost.user
             comment_author = @comment.user
+            puts comment_author.name
+            puts post_author.name
             #if post_author.id != comment_author.id
             UserMailer.notify_message(post_author, comment_author).deliver_now
             #end
