@@ -11,10 +11,27 @@
                                        data: { confirm: "You sure?" } %>
     <% end %>
     <%= render 'shared/comment_form', :@micropost_id => micropost.id %>
-    <% micropost.comments.each do |comment| %>
-      <ul>
-      <%=render comment %>
-      </ul>
-    <% end %>
+    <% if micropost.comments.any? -%>
+    <a style="cursor: pointer;" id="show-<%=micropost.id %>"  onclick='show_hide("#show-<%=micropost.id %>","#comments-<%=micropost.id %>")'>show</a>
+    <% end -%>
+    <ul id="comments-<%=micropost.id %>">
+      <% micropost.comments.each do |comment| %>
+        
+        <%=render comment %>
+        
+      <% end %>
+    </ul>
   </span>
 </li>
+
+<script>
+var show_hide = function(link_id, ul_id){
+    if($(ul_id).is(":visible"))
+      $(link_id).text("hide");
+    else
+      $(link_id).text("show");
+
+    $(ul_id).toggle();
+    return false;
+}
+</script>
