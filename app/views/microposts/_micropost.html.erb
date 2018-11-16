@@ -26,12 +26,13 @@
 
 <script>
 var show_hide = function(link_id, ul_id){
+    
+    $(ul_id).toggle();
+
     if($(ul_id).is(":visible"))
       $(link_id).text("hide");
     else
       $(link_id).text("show");
-
-    $(ul_id).toggle();
     return false;
 }
 </script>
