@@ -29,7 +29,7 @@ class CommentsController < ApplicationController
 
     def destroy
         Comment.find(params[:id]).destroy
-        flash[:success] = "Comment deleted"
+        flash[:success] = t('cdeleted')
         redirect_to request.referrer || root_url 
     end
 
@@ -40,7 +40,7 @@ class CommentsController < ApplicationController
             comment_author = comment.user_id
             
             if current_user.id != post_author || current_user.id != comment_author
-                flash[:danger] = "Impossible to destroy!"
+                flash[:danger] = t('idestroy')
                 redirect_to request.referrer || root_url 
             end
 
