@@ -38,7 +38,7 @@ it:
   logout: "Esci"
   login: "Entra"
   welcome: "Benvenuto"
-  microposts: "Attività"
+  microposts: "Micropost"
   pass_forgot: "Password Dimenticata"
   rememberme: 'Ricorda accesso'
   newusr: "Nuovo utente?"
@@ -76,21 +76,41 @@ it:
   post: "Posta"
   hide: "nascondi"
   show: "mostra"
+  change: "cambia"
   show_profile: "mostra profilo"
+  will_paginate:
+    previous_label: "Prec"
+    next_label: "Succ"
   activerecord:
+      attributes:
+        user:
+          name: "Nome"
+        micropost:
+          content: "Contenuto"
       errors:
         models:
+          micropost:
+            attributes:
+              content:
+                blank: "vuoto"
+                too_long: "troppo lungo"
           user:
             attributes:
+              name:
+                blank: "vuoto"
               email:
                 taken: "già in uso"
+                blank: "vuota"
+                invalid: "formato non valido"
               password:
                 too_short: "troppo corta"
                 blank: "vuota"
+              password_confirmation:
+                confirmation: "non è uguale a Password"
         template:
           header:
-            one:   "1 errore %{model} ha impedito il salvataggio!"
-            other: "%{count} errori %{model} hanno impedito il salvataggio!"
+            one:   "1 errore ha impedito il salvataggio!"
+            other: "%{count} errori hanno impedito il salvataggio!"
           body:    "Ci sono problemi con i seguenti campi:"
 
 

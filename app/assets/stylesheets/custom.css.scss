@@ -255,3 +255,15 @@ span.picture {
 .users.follow {
   padding: 0;
 }
+
+.errorExplanation > h2 {
+  @extend .alert;
+  @extend .alert-danger;
+}
+
+.errorExplanation > ul > li {
+  color: red;
+}
+.errorExplanation > p {
+  color: red;
+}

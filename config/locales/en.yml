@@ -65,6 +65,33 @@ en:
   post: "Post"
   show: "show"
   hide: "hide"
+  change: "change"
   show_profile: "view my profile"
-
+  will_paginate:
+    previous_label: "Prev"
+    next_label: "Next"
+  activerecord:
+      errors:
+        models:
+          micropost:
+              attributes:
+                content:
+                  blank: "empty"
+                  too_long: "too long"
+          user:
+            attributes:
+              name:
+                blank: "empty"
+              email:
+                taken: "already in use"
+                blank: "empty"
+                invalid: "not valid"
+              password:
+                too_short: "too short"
+                blank: "empty"
+        template:
+          header:
+            one:   "1 error prohibited this %{model} from being saved!"
+            other: "%{count} errors prohibited this %{model} from being!"
+          body:    "There were problems with the following fields:"
 

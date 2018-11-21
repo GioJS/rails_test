@@ -78,6 +78,7 @@ GEM
     concurrent-ruby (1.1.2)
     crass (1.0.4)
     dry-inflector (0.1.2)
+    dynamic_form (1.1.4)
     erubi (1.7.1)
     excon (0.62.0)
     execjs (2.7.0)
@@ -228,6 +229,7 @@ DEPENDENCIES
   capybara (~> 2.13)
   carrierwave (= 0.10.0)
   coffee-rails (~> 4.2)
+  dynamic_form
   fog (= 1.23.0)
   jbuilder (~> 2.5)
   jquery-rails
