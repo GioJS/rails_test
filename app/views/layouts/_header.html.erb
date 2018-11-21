@@ -2,28 +2,44 @@
   <div class="container">
     <%= link_to "sample app", root_path, id: "logo" %>
     <nav>
-      <ul class="nav navbar-nav navbar-right">
+      <ul class="nav navbar-nav navbar-left">
         <li><%= link_to "Home", root_path %></li>
-        <li><%= link_to "Help", help_path %></li>
+        <li><%= link_to t("help"), help_path %></li>
         <% if logged_in? %>
-          <li><%= link_to "Users", users_path %></li>
+          <li><%= link_to t("users"), users_path %></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               Account <b class="caret"></b>
             </a>
             <ul class="dropdown-menu">
-              <li><%= link_to "Profile", current_user %></li>
-              <li><%= link_to "Settings", edit_user_path(current_user) %></li>
+              <li><%= link_to t("profile"), current_user %></li>
+              <li><%= link_to t("settings"), edit_user_path(current_user) %></li>
               <li class="divider"></li>
               <li>
-                <%= link_to "Log out", logout_path, method: "delete" %>
+                <%= link_to t("logout"), logout_path, method: "delete" %>
               </li>
             </ul>
           </li>
         <% else %>
-          <li><%= link_to "Log in", login_path %></li>
+          <li><%= link_to t("login"), login_path %></li>
         <% end %>
+        
       </ul>
+      <form class="navbar-form navbar-right">
+      <div class="form-group"><%= select_tag "language",
+          options_for_select(['en', 'it'], I18n.locale), {:class => 'form-control input-sm'} %></div>
+        </form>
+       
     </nav>
   </div>
 </header>
+
+<script type="text/javascript">
+  $('#language').on('change', function() {
+    $.get({
+      url: '/locale/'+$("#language").val()
+    }).success(function(data) {
+      location.reload();
+    });
+  });
+</script>

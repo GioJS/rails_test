@@ -29,14 +29,13 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 
-en:
-  askDel: "Are you sure?"
-  help: "Help"
-  users: "Users"
-  profile: "Profile"
-  settings: "Settings"
-  logout: "Log out"
-  login: "Log in"
-  welcome: "Welcome"
-
+it:
+  askDel: "Sicuro?"
+  help: "Aiuto"
+  users: "Utenti"
+  profile: "Profilo"
+  settings: "Impostazioni"
+  logout: "Esci"
+  login: "Entra"
+  welcome: "Benvenuto"
 
