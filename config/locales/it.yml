@@ -54,6 +54,10 @@ it:
   update_prof: "Aggiorna account"
   comment: "Commenta"
   comment_plh: "Aggiungi commento"
+  post_micropost: "Aggiungi post"
+  max_size: "La grandezza massima dei file è di 5MB. Scegli un file più piccolo."
+  followers: "seguaci"
+  following: "seguiti"
 
 
 
