@@ -40,7 +40,7 @@ class CommentsController < ApplicationController
             comment_author = comment.user_id
             
             if current_user.id != post_author || current_user.id != comment_author
-                flash[:danger] = t('idestroy')
+                flash[:danger] = "Error"
                 redirect_to request.referrer || root_url 
             end
 
