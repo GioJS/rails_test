@@ -40,5 +40,8 @@ it:
   welcome: "Benvenuto"
   microposts: "Attività"
   pass_forgot: "Password Dimenticata"
+  rememberme: 'Ricorda accesso'
+  newusr: "Nuovo utente?"
+
 
 

@@ -40,5 +40,7 @@ en:
   welcome: "Welcome"
   microposts: "Micropost Feed"
   pass_forgot: "Password Forgot"
+  rememberme: 'Remember me on this computer'
+  newusr: 'New user?'
 
 
