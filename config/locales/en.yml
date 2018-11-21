@@ -99,8 +99,7 @@ en:
     password_reset:
       subject: 'Reset password'
       below_link: 'To reset your password click the link below:'
-      after_link: 'This link will expire in two hours. If you did not request your password to be reset, please ignore this email and
-          your password will stay as it is.'
+      after_link: 'This link will expire in two hours. If you did not request your password to be reset, please ignore this email and your password will stay as it is.'
   will_paginate:
     previous_label: "Prev"
     next_label: "Next"
