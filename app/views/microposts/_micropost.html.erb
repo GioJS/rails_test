@@ -7,7 +7,7 @@
   <span class="timestamp">
     <%= t('posted') %> <%= time_ago_in_words(micropost.created_at) %> <%= t('ago')%>.
     <% if current_user?(micropost.user) %>
-      <%= link_to "delete", micropost, method: :delete,
+      <%= link_to t('delete'), micropost, method: :delete,
                                        data: { confirm: t('askDel') } %>
     <% end %>
     <%= render 'shared/comment_form', :@micropost_id => micropost.id %>

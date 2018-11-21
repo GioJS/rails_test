@@ -6,7 +6,7 @@
   <span class="timestamp">
     <%=t('posted')%> <%= time_ago_in_words(comment.created_at) %> <%=t('ago')%>.
     <% if is_comment_author_or_post_author?(comment.id) %>
-      <%= link_to "delete", "/comments/#{comment.id}", method: :delete,
+      <%= link_to t("delete"), "/comments/#{comment.id}", method: :delete,
                                        data: { confirm: t('askDel') } %>
     <% end %>
   </span>
