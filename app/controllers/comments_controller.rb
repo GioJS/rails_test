@@ -11,6 +11,7 @@ class CommentsController < ApplicationController
         if params['text'].length == 0
             flash[:danger] = t('empty_comment')
             redirect_to request.referrer || root_url
+        end
         @comment.assign_attributes({:text => params['text'], :post_id => params['post_id'], :user_id => current_user.id})
         if @comment.save!
             flash[:success] = t('posted')
@@ -40,7 +41,7 @@ class CommentsController < ApplicationController
             comment_author = comment.user_id
             
             if current_user.id != post_author || current_user.id != comment_author
-                flash[:danger] = "Error"
+                flash[:danger] = t('idestroy')
                 redirect_to request.referrer || root_url 
             end
 
