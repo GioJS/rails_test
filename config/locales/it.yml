@@ -87,11 +87,11 @@ it:
               password:
                 too_short: "troppo corta"
                 blank: "vuota"
-      template:
-        header:
-          one:   "1 errore %{model} ha impedito il salvataggio!"
-          other: "%{count} errori %{model} hanno impedito il salvataggio!"
-        body:    "Ci sono problemi con i seguenti campi:"
+        template:
+          header:
+            one:   "1 errore %{model} ha impedito il salvataggio!"
+            other: "%{count} errori %{model} hanno impedito il salvataggio!"
+          body:    "Ci sono problemi con i seguenti campi:"
 
 
 
