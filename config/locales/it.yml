@@ -38,4 +38,7 @@ it:
   logout: "Esci"
   login: "Entra"
   welcome: "Benvenuto"
+  microposts: "Attività"
+  pass_forgot: "Password Dimenticata"
+
 

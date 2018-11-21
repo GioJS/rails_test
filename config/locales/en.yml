@@ -38,5 +38,7 @@ en:
   logout: "Log out"
   login: "Log in"
   welcome: "Welcome"
+  microposts: "Micropost Feed"
+  pass_forgot: "Password Forgot"
 
 
