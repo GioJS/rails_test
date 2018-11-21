@@ -98,13 +98,13 @@ it:
   user_mailer:
     account_activation:
       subject: 'Attivazione account'
-      greeting: 'Ciao %{@user.name},'
+      greeting: 'Ciao <%=@user.name%>,'
       content: 'Benvenuto in Sample App! Clicca sul link sottostante per attivare il tuo account:'
       activate: "Attiva"
     notify_message:
       subject: 'Notifica nuovo commento'
-      greeting: 'Ciao %{@user.name},'
-      new_message: 'Hai un nuovo messaggio da parte di %{@userFrom.name}'
+      greeting: 'Ciao <%=@user.name%>,'
+      new_message: 'Hai un nuovo messaggio da parte di <%=@userFrom.name%>'
   will_paginate:
     previous_label: "Prec"
     next_label: "Succ"

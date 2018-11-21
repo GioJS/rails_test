@@ -86,13 +86,13 @@ en:
   user_mailer:
     account_activation:
       subject: 'Account activation'
-      greeting: 'Hi %{@user.name},'
+      greeting: 'Hi <%=@user.name%>,'
       content: 'Welcome to the Sample App! Click on the link below to activate your account:'
       activate: "Activate"
     notify_message:
       subject: 'New comment'
-      greeting: 'Hi %{@user.name},'
-      new_message: 'There is a new messege from %{@userFrom.name}'
+      greeting: 'Hi <%=@user.name%>,'
+      new_message: 'There is a new messege from <%=@userFrom.name%>'
   will_paginate:
     previous_label: "Prev"
     next_label: "Next"
