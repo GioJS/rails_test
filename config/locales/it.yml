@@ -77,6 +77,14 @@ it:
   hide: "nascondi"
   show: "mostra"
   show_profile: "mostra profilo"
+  activerecord:
+    errors:
+      template:
+        header:
+          one:   "1 errore %{model} ha impedito il salvataggio!"
+          other: "%{count} errori %{model} hanno impedito il salvataggio!"
+        body:    "Ci sono problemi con i seguenti campi:"
+
 
 
 
