@@ -74,8 +74,8 @@ it:
         other: "%{count} secondi"
   delete: "elimina"
   post: "Posta"
-  hide: "Nascondi"
-  show: "Mostra"
+  hide: "nascondi"
+  show: "mostra"
 
 
 
