@@ -1,4 +1,4 @@
-<p><%= t('user_mailer.notify_message.greeting') %>
+<p><%= t('user_mailer.notify_message.greeting') %>  <%=@user.name%>
 </p>
 
-<p><%= t('user_mailer.notify_message.new_message')%></p>
+<p><%= t('user_mailer.notify_message.new_message')%>  <%=@userFrom.name%></p>
