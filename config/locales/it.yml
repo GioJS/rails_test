@@ -50,6 +50,8 @@ it:
   follow: "Segui"
   unfollow: "Non seguire"
   save: "Salva"
+  create_acc: "Crea account"
+  update_prof: "Aggiorna account"
 
 
 
