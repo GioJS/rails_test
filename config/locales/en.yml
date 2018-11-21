@@ -87,7 +87,7 @@ en:
     account_activation:
       subject: 'Account activation'
       greeting: 'Hi %{@user.name},'
-      content: ''Welcome to the Sample App! Click on the link below to activate your account:'
+      content: 'Welcome to the Sample App! Click on the link below to activate your account:'
       activate: "Activate"
     notify_message:
       subject: 'New comment'
