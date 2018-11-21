@@ -94,6 +94,9 @@ it:
   hide: "nascondi"
   show: "mostra"
   change: "cambia"
+  email_sent: "Ti è stata inviata una mail con le istruzioni per il reset."
+  password_b: 'Password vuota'
+  password_r: "Password è stata reimpostata."
   show_profile: "mostra profilo"
   user_mailer:
     account_activation:

@@ -82,6 +82,9 @@ en:
   hide: "hide"
   eposted: "Error during post"
   change: "change"
+  email_sent: "Email sent with password reset instructions"
+  password_b: 'Password can't be blank'
+  password_r: "Password has been reset."
   show_profile: "view my profile"
   user_mailer:
     account_activation:
