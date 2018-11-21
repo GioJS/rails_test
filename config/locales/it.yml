@@ -105,13 +105,10 @@ it:
       subject: 'Notifica nuovo commento'
       greeting: 'Ciao'
       new_message: 'Hai un nuovo messaggio da parte di'
-     password_reset:
+    password_reset:
       subject: 'Reset password'
       below_link: 'Per reimpostare la password clicca sul seguente link:'
-      after_link: '
-          Questo link scade tra 2 ore.
-
-          Se non hai richiesto questo reset, ignora la mail.'
+      after_link: 'Questo link scade tra 2 ore. Se non hai richiesto questo reset, ignora la mail.'
   will_paginate:
     previous_label: "Prec"
     next_label: "Succ"
