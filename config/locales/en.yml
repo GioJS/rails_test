@@ -52,5 +52,8 @@ en:
   save: "Save"
   create_acc: "Create account"
   update_prof: "Update your profile"
+  comment: "Comment"
+  comment_plh: "Compose new comment..."
+  post_micropost: "Compose new micropost..."
 
 

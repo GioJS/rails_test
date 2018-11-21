@@ -52,7 +52,8 @@ it:
   save: "Salva"
   create_acc: "Crea account"
   update_prof: "Aggiorna account"
-
+  comment: "Commenta"
+  comment_plh: "Aggiungi commento"
 
 
 
