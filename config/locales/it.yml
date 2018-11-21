@@ -76,6 +76,7 @@ it:
   pls_check: "Controlla la tua email per attivare l'account"
   acc_not_act: "Account non attivo"
   prof_updated: "Profilo aggiornato"
+  empty_comment: "Commento vuoto"
   u_deleted: "Utente rimosso"
   datetime:
     distance_in_words:

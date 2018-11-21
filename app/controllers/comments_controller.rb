@@ -9,7 +9,7 @@ class CommentsController < ApplicationController
     def create
         @comment = Comment.new
         if params['text'].length == 0
-            flash[:danger] = "Commento vuoto"
+            flash[:danger] = t('empty_comment')
             redirect_to request.referrer || root_url
         @comment.assign_attributes({:text => params['text'], :post_id => params['post_id'], :user_id => current_user.id})
         if @comment.save!

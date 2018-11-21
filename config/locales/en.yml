@@ -52,6 +52,7 @@ en:
   prof_updated: "Profile updated"
   unfollow: "Unfollow"
   save: "Save"
+  empty_comment: "Empty comment"
   pls_check: "Please check your email to activate your account."
   wrong_user: "you are a different user"
   check_email: "Check your email for the activation link."
