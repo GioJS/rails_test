@@ -42,6 +42,7 @@ it:
   pass_forgot: "Password Dimenticata"
   rememberme: 'Ricorda accesso'
   newusr: "Nuovo utente?"
+  signup: 'Registrati!'
 
 
 
