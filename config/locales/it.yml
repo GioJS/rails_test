@@ -88,6 +88,8 @@ it:
         micropost:
           content: "Contenuto"
       errors:
+        messages:
+            record_invalid: "non valido"
         models:
           micropost:
             attributes:

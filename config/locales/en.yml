@@ -72,6 +72,8 @@ en:
     next_label: "Next"
   activerecord:
       errors:
+        messages:
+          record_invalid: "invalid"
         models:
           micropost:
               attributes:
