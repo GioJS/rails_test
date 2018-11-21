@@ -12,7 +12,7 @@
     <% end %>
     <%= render 'shared/comment_form', :@micropost_id => micropost.id %>
     <% if micropost.comments.any? -%>
-    <a style="cursor: pointer;" id="show-<%=micropost.id %>"  onclick='show_hide("#show-<%=micropost.id %>","#comments-<%=micropost.id %>")'>hide</a>
+    <a style="cursor: pointer;" id="show-<%=micropost.id %>"  onclick='show_hide("#show-<%=micropost.id %>","#comments-<%=micropost.id %>")'><%= t('hide') %></a>
     <% end -%>
     <ul id="comments-<%=micropost.id %>">
       <% micropost.comments.each do |comment| %>
