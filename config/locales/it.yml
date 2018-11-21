@@ -79,6 +79,11 @@ it:
   show_profile: "mostra profilo"
   activerecord:
     errors:
+      models:
+        user:
+          attributes:
+            emails:
+              taken: "Indirizzo già in uso"
       template:
         header:
           one:   "1 errore %{model} ha impedito il salvataggio!"
