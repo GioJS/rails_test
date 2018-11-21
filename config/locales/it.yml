@@ -61,16 +61,17 @@ it:
   update_pass: "Aggiorna password"
   posted: "Postato"
   ago: "fa"
-  distance_in_words:
-    x_days:
-      one: "1 giorno"
-      other: "%{count} giorni"
-    x_hours:
-      one: "1 ora"
-      other: "%{count} ore"
-    x_seconds:
-      one: "1 secondo"
-      other: "%{count} secondi"
+  datetime:
+    distance_in_words:
+      x_days:
+        one: "1 giorno"
+        other: "%{count} giorni"
+      x_hours:
+        one: "1 ora"
+        other: "%{count} ore"
+      x_seconds:
+        one: "1 secondo"
+        other: "%{count} secondi"
 delete: "elimina"
 
 
