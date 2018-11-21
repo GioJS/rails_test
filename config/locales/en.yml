@@ -46,5 +46,9 @@ en:
   send_mail: 'Send mail'
   signup_t: 'Sign up'
   confirmation: "Confirmation"
+  allusers: 'All users'
+  follow: "Follow"
+  unfollow: "Unfollow"
+  save: "Save"
 
 

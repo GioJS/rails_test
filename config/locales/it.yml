@@ -46,6 +46,10 @@ it:
   send_mail: 'Invia email'
   signup_t: 'Registrati'
   confirmation: 'Conferma password'
+  allusers: "Utenti"
+  follow: "Segui"
+  unfollow: "Non seguire"
+  save: "Salva"
 
 
 
