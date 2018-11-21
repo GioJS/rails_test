@@ -65,6 +65,7 @@ en:
   post: "Post"
   show: "show"
   hide: "hide"
+  eposted: "Error during post"
   change: "change"
   show_profile: "view my profile"
   will_paginate:

@@ -60,6 +60,7 @@ it:
   following: "seguiti"
   update_pass: "Aggiorna password"
   posted: "Postato"
+  eposted: "Errore durante il post"
   ago: "fa"
   datetime:
     distance_in_words:

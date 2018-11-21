@@ -13,7 +13,7 @@ class CommentsController < ApplicationController
             redirect_to request.referrer || root_url
         @comment.assign_attributes({:text => params['text'], :post_id => params['post_id'], :user_id => current_user.id})
         if @comment.save!
-            flash[:success] = "Comment posted!"
+            flash[:success] = t('posted')
             post_author = @comment.micropost.user
             comment_author = @comment.user
             
@@ -22,7 +22,7 @@ class CommentsController < ApplicationController
             #end
             redirect_to request.referrer || root_url
         else
-            flash[:danger] = "Impossible to comment!"
+            flash[:danger] = t('epost')
             redirect_to request.referrer || root_url 
         end
     end
