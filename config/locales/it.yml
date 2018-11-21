@@ -86,6 +86,7 @@ it:
                 taken: "già in uso"
               password:
                 too_short: "troppo corta"
+                blank: "vuota"
       template:
         header:
           one:   "1 errore %{model} ha impedito il salvataggio!"
