@@ -43,6 +43,10 @@ it:
   rememberme: 'Ricorda accesso'
   newusr: "Nuovo utente?"
   signup: 'Registrati!'
+  send_mail: 'Invia email'
+  signup_t: 'Registrati'
+  confirmation: 'Conferma password'
+
 
 
 

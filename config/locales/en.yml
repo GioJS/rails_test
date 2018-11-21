@@ -43,5 +43,8 @@ en:
   rememberme: 'Remember me on this computer'
   newusr: 'New user?'
   signup: 'Sign up now!'
+  send_mail: 'Send mail'
+  signup_t: 'Sign up'
+  confirmation: "Confirmation"
 
 
