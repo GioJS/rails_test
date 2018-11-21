@@ -56,5 +56,10 @@ en:
   comment_plh: "Compose new comment..."
   post_micropost: "Compose new micropost..."
   max_size: 'Maximum file size is 5MB. Please choose a smaller file.'
+  followers: "followers"
+  following: "following"
+  update_pass: "Update password"
+  posted: "Posted"
+  ago: "Ago"
 
 
