@@ -84,6 +84,8 @@ it:
             attributes:
               email:
                 taken: "Indirizzo già in uso"
+              password:
+                too_short: "Password troppo corta"
       template:
         header:
           one:   "1 errore %{model} ha impedito il salvataggio!"
