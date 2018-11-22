@@ -50,8 +50,8 @@ it:
   datetime:
     distance_in_words:
       about_x_hours :
-        one: 'about 1 ora'
-        other: 'about %{count} ore'
+        one: '1 ora'
+        other: '%{count} ore'
       x_days:
         one: "1 giorno"
         other: "%{count} giorni"
