@@ -115,11 +115,11 @@ it:
               blank: "vuota"
             password_confirmation:
               confirmation: "non è uguale a Password"
-        template:
-          header:
-            one:   "1 errore ha impedito il salvataggio!"
-            other: "%{count} errori hanno impedito il salvataggio!"
-          body:    "Ci sono problemi con i seguenti campi:"
+      template:
+        header:
+          one:   "1 errore ha impedito il salvataggio!"
+          other: "%{count} errori hanno impedito il salvataggio!"
+        body:    "Ci sono problemi con i seguenti campi:"
 
 
 
