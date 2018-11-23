@@ -14,6 +14,6 @@ class UserMailer < ApplicationMailer
   def notify_message(userTo, userFrom)
     @userTo = userTo
     @userFrom = userFrom
-    mail to: userTo.email, subject: t('user_mailer.password_reset.subject')
+    mail to: userTo.email, subject: t('user_mailer.notify_message.subject')
   end
 end
