@@ -63,7 +63,7 @@ it:
         other: "%{count} secondi"
       x_minutes:
         one: '1 minuto'
-        other: '%{count minuti}'
+        other: '%{count} minuti'
   delete: "elimina"
   post: "Posta"
   hide: "nascondi"
