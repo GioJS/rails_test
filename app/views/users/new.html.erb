@@ -18,6 +18,19 @@
       <%= f.password_field :password_confirmation, class: 'form-control' %>
 
       <%= f.submit t('create_acc'), class: "btn btn-primary" %>
-    <% end %>
+    <div class="gravatar_edit">
+      <%= gravatar_for(@user, "50") %>
+       <span class="picture">
+        <%= f.file_field :avatar, accept: 'image/jpeg,image/gif,image/png' %>  </span>
   </div>
+  <% end %>
 </div>
+
+<script type="text/javascript">
+  $('#user_avatar').bind('change', function() {
+    size_in_megabytes = this.files[0].size/1024/1024;
+    if (size_in_megabytes > 5) {
+      alert(t('max_size'));
+    }
+  });
+</script>
