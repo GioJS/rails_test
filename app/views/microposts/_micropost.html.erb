@@ -27,7 +27,9 @@
 <script>
 var show_hide = function(link_id, ul_id){
     
-    $(ul_id).toggle();
+    $(ul_id).animate({
+      height: 'toggle'
+    });
 
     if($(ul_id).is(":visible"))
       $(link_id).text('<%= t("hide") %>');
