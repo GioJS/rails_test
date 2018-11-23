@@ -50,8 +50,8 @@ it:
   datetime:
     distance_in_words:
       about_x_hours :
-        one: '1 ora'
-        other: '%{count} ore'
+        one: 'circa 1 ora'
+        other: 'circa %{count} ore'
       x_days:
         one: "1 giorno"
         other: "%{count} giorni"
@@ -65,8 +65,8 @@ it:
         one: '1 minuto'
         other: '%{count} minuti'
       less_than_x_minutes:
-        one: '1 minuto'
-        other: '%{count} minuti'
+        one: 'meno di 1 minuto'
+        other: 'meno di %{count} minuti'
   delete: "elimina"
   post: "Posta"
   hide: "nascondi"
