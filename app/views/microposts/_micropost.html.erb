@@ -29,12 +29,14 @@ var show_hide = function(link_id, ul_id){
     
     $(ul_id).animate({
       height: 'toggle'
+    }, function() {
+      if($(ul_id).is(":visible"))
+        $(link_id).text('<%= t("hide") %>');
+      else
+        $(link_id).text('<%= t('show') %>');
     });
 
-    if($(ul_id).is(":visible"))
-      $(link_id).text('<%= t("hide") %>');
-    else
-      $(link_id).text('<%= t('show') %>');
+    
     return false;
 }
 </script>
